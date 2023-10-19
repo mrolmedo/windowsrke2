@@ -24,8 +24,8 @@ Running  vmcompute          Hyper-V Host Compute Service
 | --- | --- |  
 | systemctl status rke2-agent | Get-Service -Name rke2
 | systemctl status rancher-system-agent | Get-Service -Name rancher-wins
-| journalctl -fu rke2-server     | Get-EventLog -LogName Application -Source 'rke2'  -Newest 500  format-table  -Property TimeGenerated, ReplacementStrings -Wrap
-| journalctl -fu rancher-system-agent    | Get-EventLog -LogName Application -Source 'rancher-wins'  -Newest 500  format-table  -Property TimeGenerated, ReplacementStrings -Wrap
+| journalctl -fu rke2-server     | Get-EventLog -LogName Application -Source 'rke2'  -Newest 500 \| format-table  -Property TimeGenerated, ReplacementStrings -Wrap
+| journalctl -fu rancher-system-agent    | Get-EventLog -LogName Application -Source 'rancher-wins'  -Newest 500  \|format-table  -Property TimeGenerated, ReplacementStrings -Wrap
 
 
 ### CHECKS-PROCESS
