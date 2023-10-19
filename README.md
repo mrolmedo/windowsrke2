@@ -19,6 +19,7 @@ Running  vmcompute          Hyper-V Host Compute Service
 
 ### CHECKS SERVICE 
 - [:white_check_mark:] RKE2 Service
+- - [:white_check_mark:] Rancher System Agent (rancher-wins)
 
 | Linux | Windows| 
 | --- | --- |  
