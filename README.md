@@ -55,3 +55,6 @@ Handles  NPM(K)    PM(K)      WS(K)     CPU(s)     Id  SI ProcessName
 ```
 
 ### ERRORS
+```
+PS C:\etc\rancher> Get-CimInstance  -ClassName Win32_Service -Filter "name = 'hns'"
+```
