@@ -55,6 +55,8 @@ Handles  NPM(K)    PM(K)      WS(K)     CPU(s)     Id  SI ProcessName
 ```
 
 ### ERRORS
-```
-PS C:\etc\rancher> Get-CimInstance  -ClassName Win32_Service -Filter "name = 'hns'"
-```
+
+| Issue  | Error  | Solution| 
+| -----  | ---    |    --- | 
+ Service hns stopped or StopPending status| Status StopPending Name hns | Identify the PID  PS C:\etc\rancher> Get-CimInstance  -ClassName Win32_Service -Filter "name = 'hns'" and kill it (Stop-Proccess -Id "PID"
+
