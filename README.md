@@ -15,6 +15,15 @@ Status   Name               DisplayName
 ------   ----               -----------
 Running  hns                Host Network Service
 Running  vmcompute          Hyper-V Host Compute Service
+
+PS C:\etc\rancher> Get-service hns -RequiredServices
+
+Status   Name               DisplayName
+------   ----               -----------
+Running  vfpext             Microsoft Azure VFP Switch Extension
+Running  RpcSs              Remote Procedure Call (RPC)
+Running  nsi                Network Store Interface Service
+
 ```
 
 ### CHECKS SERVICE 
