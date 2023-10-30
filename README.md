@@ -54,6 +54,21 @@ Handles  NPM(K)    PM(K)      WS(K)     CPU(s)     Id  SI ProcessName
     197      17    27320      37516     181.41    440   0 kube-proxy
 ```
 
+### CRICTL COMMAND
+```
+cd C:\var\lib\rancher\rke2\bin
+```
+
+-  #### List images
+```
+PS C:\var\lib\rancher\rke2\bin> ./crictl.exe -r 'npipe:////./pipe/containerd-containerd' image ls
+IMAGE                                        TAG                                       IMAGE ID            SIZE
+docker.io/rancher/pause                      3.6                                       2a67292b6e8ba       119MB
+docker.io/rancher/wins                       v0.4.11                                   fb25704df6c5c       2.37GB
+mcr.microsoft.com/dotnet/framework/runtime   4.8-20230613-windowsservercore-ltsc2022   00fa7942c440d       1.48GB
+
+```
+
 ### ERRORS
 
 | Issue  | Error  | Solution| 
