@@ -37,6 +37,15 @@ Running  nsi                Network Store Interface Service
 | journalctl -fu rke2-server     | Get-EventLog -LogName Application -Source 'rke2'  -Newest 500 \| format-table  -Property TimeGenerated, ReplacementStrings -Wrap
 | journalctl -fu rancher-system-agent    | Get-EventLog -LogName Application -Source 'rancher-wins'  -Newest 500  \|format-table  -Property TimeGenerated, ReplacementStrings -Wrap
 
+#### Additional info
+```
+PS C:\Windows> (Get-EventLog -LogName "System" -Source "Service Control Manager" -EntryType "Information" -Message "*hns service*running*" -Newest 4).TimeGenerated
+
+Wednesday, October 18, 2023 4:20:39 PM
+Wednesday, October 18, 2023 4:18:03 PM
+Monday, October 16, 2023 1:41:21 PM
+Monday, October 16, 2023 1:36:13 PM
+```
 
 ### CHECKS-PROCESS
 
